@@ -1,0 +1,31 @@
+{
+  "name": "pomodoro-clock",
+  "version": "1.0.0",
+  "description": "simple clock for poomdoro workflow technique",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bmichalczuk/pomodoro.git"
+  },
+  "keywords": [
+    "pomodoro",
+    "time",
+    "menagment"
+  ],
+  "author": "Bartosz Michalczuk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bmichalczuk/pomodoro/issues"
+  },
+  "homepage": "https://github.com/bmichalczuk/pomodoro#readme",
+  "devDependencies": {
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-ruby-sass": "^2.1.1",
+    "gulp-uglify": "^2.1.2",
+    "pump": "^1.0.2"
+  }
+}

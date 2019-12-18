@@ -1,0 +1,134 @@
+$background-color: #161A20;
+$main-color: #D85F09;
+$text-color: #FFFFFF;
+$secondary-color: #FFFDD0;
+$lightgreen-color: #8BC34A;
+$first-brakpoint:  "min-width: 500px";
+
+* {
+	box-sizing: border-box;
+	margin: 0; 
+	padding: 0;
+}
+body {
+	background-color: $background-color;
+	color: $text-color;
+	font-size: 100%;
+}
+.app {
+	font-size: .8em;
+	@media ($first-brakpoint) {
+		font-size: 1em;
+	}
+	text-align: center;
+	padding: 1.5rem;
+	&__heading {
+		text-transform: uppercase;
+		font-size: 2em;
+		letter-spacing: 1px;
+		margin-bottom: .5em;
+		@media ($first-brakpoint) {
+			font-size: 3em;
+		}
+	}
+	&__subheading {
+		display: block;
+		font-size: .7em;
+	}
+	&--session {
+		.clock__background {
+			background-color: $main-color;
+		}
+		.app__subheading {
+			color: $main-color;
+		}
+		.settings__controll {
+			&:focus, 
+			&:hover {
+				color: $main-color;
+			}
+		}
+	}
+	&--break {
+		.clock__background {
+			background-color: $lightgreen-color;
+		}
+		.app__subheading {
+			color: $lightgreen-color;
+		}
+		.settings__controll {
+			&:focus, 
+			&:hover {
+				color: $lightgreen-color;
+			}
+		}
+	}
+}
+.settings {
+	margin: 2em auto;
+	display: flex;
+	justify-content: center;
+	&__break {
+		margin-right: .5em;
+		@media ($first-brakpoint) {
+			margin-right: 1.5em;
+		}
+	}
+	&__heading {
+		letter-spacing: 1px;
+		margin-bottom: .2em;
+	}
+	&__controll {
+		background: transparent;
+		color: $text-color;
+		border: none;
+		font-size: 1.5em;
+		&:hover,
+		&:focus {
+			cursor: pointer;
+		}
+	}
+	&__length {
+		font-size: 2em;
+	}
+}
+.clock {
+	border: 2px solid $text-color;
+	width: 15em;
+	height: 15em;
+	font-size: .9em;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+	background-color: transparent;
+	border-radius: 50%;
+	color: $text-color;
+	overflow: hidden;
+	@media ($first-brakpoint) {
+		font-size: 1em;
+		width: 20em;
+		height: 20em;
+	}
+	&:hover {
+		cursor: pointer;
+	}
+	&__turn {
+		font-size: 2em;
+		margin-bottom: 2em;
+		@media($first-brakpoint) {
+			font-size: 3em;
+		}
+	}
+	&__timer {
+		font-size: 2em;
+	}
+	&__background {
+		z-index: -1;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+}

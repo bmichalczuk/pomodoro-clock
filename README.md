@@ -1,1 +1,4 @@
-# pomodoro-clock
+
+# PomodoroClock
+
+Old project, around 2017.

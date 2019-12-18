@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Pomodoro clock">
+	<link rel="stylesheet" href="dist/css/main.css" type="text/css">
+	<title>Pomodoro Clock</title>
+</head>
+<body>
+    <div class="app app--session">
+        <h1 class="app__heading">Pomodoro<span class="app__subheading">Clock</span></h1> 
+        <div class="settings">
+            <div class="settings__break">
+                <h2 class="settings__heading">Break length</h2>
+                <button class="settings__controll settings__controll--decrase">-</button>
+                <span class="settings__length settings__length--break">5</span>
+                <button class="settings__controll settings__controll--incrase">+</button>
+            </div>
+            <div class="settings__session">
+                <h2 class="settings__heading">Session length</h2>
+                <button class="settings__controll settings__controll--decrase">-</button>
+                <span class="settings__length settings__length--session">25</span>
+                <button class="settings__controll settings__controll--incrase">+</button>
+            </div>
+        </div>
+        <div class="clock">
+            <h2 class="clock__turn">Session</h2>
+            <p class="clock__timer">25:00</p>
+            <div class="clock__background"></div>
+        </div>
+    </div><!--app end-->
+    <script src="src/js/main.js"></script>
+  	<!--<script src="dist/js/main.js"></script>-->
+</body>
+</html>
